@@ -14,14 +14,14 @@ const scene = new THREE.Scene()
 const geometry1 = new THREE.SphereGeometry(1, 32, 32)
 const geometry = new THREE.BufferGeometry()
 
-const count = 500
-const positionArray = new Float32Array(count * 3 * 3) // * 3 vericies * 3 values
+const count = 5
+const positionsArray = new Float32Array(count * 3 * 3) // * 3 vericies * 3 values
 
 for (let i = 0; i < count * 3 * 3; i++) {
-    positionArray[i] = (Math.random() - 0.5) * 4
+    positionsArray[i] = (Math.random() - 0.5) * 4
 }
 
-const positionAttribute = new THREE.BufferAttribute(positionArray, 3);
+const positionAttribute = new THREE.BufferAttribute(positionsArray, 3);
 geometry.setAttribute('position', positionAttribute)
 
 const material = new THREE.MeshBasicMaterial({ 
