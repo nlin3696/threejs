@@ -18,14 +18,14 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Axes helper
-const axesHelper = new THREE.AxesHelper()
-scene.add(axesHelper)
+// const axesHelper = new THREE.AxesHelper()
+// scene.add(axesHelper)
 
 /**
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const matcapTx = textureLoader.load('/textures/matcaps/8.png')
+const matcapTx = textureLoader.load('/textures/matcaps/3.png')
 matcapTx.colorSpace = THREE.SRGBColorSpace
 
 /**
